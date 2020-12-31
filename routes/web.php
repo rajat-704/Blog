@@ -23,13 +23,11 @@ require __DIR__.'/auth.php';
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('dashboard');
-});
+Route::get('/', [PostController::class, 'indexPagePosts']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
 
 Route::get('/allPost', [PostController::class, 'showPosts']);
 Route::get('/post/{id}', [PostController::class, 'postDetails']);
