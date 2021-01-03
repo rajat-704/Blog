@@ -15,7 +15,7 @@
                 <div class="col-8 col-sm-10">
                     <h1>Trending</h1>
                 </div>
-                <div class="col-1 col-sn-2 view"><a href="/allPost">
+                <div class="col-1 col-sn-2 view"><a href="/trending">
                     <button class="btn view-all" >View All</button></a>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                 <div class="col-8 col-sm-10">
                     <h1>Latest</h1>
                 </div>
-                <div class="col-1 col-sn-2 view"><a href="/allPost">
+                <div class="col-1 col-sn-2 view"><a href="/latest">
                     <button class="btn view-all" >View All</button></a>
                 </div>
             </div>

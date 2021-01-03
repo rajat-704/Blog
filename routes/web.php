@@ -31,7 +31,8 @@ Route::get('/', [PostController::class, 'indexPagePosts']);
 
 Route::get('/allPost', [PostController::class, 'showPosts']);
 Route::get('/post/{id}', [PostController::class, 'postDetails']);
-
+Route::get('/trending', [PostController::class, 'trending']);
+Route::get('/latest', [PostController::class, 'latest']);
 Route::get('/post', function () {
     return view('post');
 });

@@ -1,6 +1,12 @@
 <x-app-layout>
     <div class="row" style="margin-right: 0px;">
         <div class="col-md-2">
+            <div class="row m-4">
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="/latest">Latest</a></li>
+                    <li class="list-group-item"><a href="/trending">Trending</a></li>
+                </ul>
+            </div>
         </div>
         <div class="col-md-8">
             <h1 style="margin-left: 15px;">All Posts</h1>
@@ -24,8 +30,16 @@
                 </div>
             </div>
             @endforeach
+            <br/>
+            {{ $posts->links() }}
         </div>
         <div class="col-md-2">
+            <div class="row m-4">
+                <h4>Categories</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Coming Soon</li>
+                </ul>
+            </div>
         </div>
     </div>
 </x-app-layout>
